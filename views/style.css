@@ -1,0 +1,79 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+a{
+	vertical-align: middle;
+}
+
+img{
+	border-color: black;
+ 	border-style: solid;
+  	border-width: 1px 1px 1px;
+  	width: 339.328px;
+  	height: 339.328px;
+}
+.ph-button {
+  border-style: solid;
+  border-width: 0px 0px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  color: #FFFFFF;	   
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all 200ms ease-in-out 0s;
+  white-space: nowrap;	
+  font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+  font-weight: 700;	
+  padding: 19px 39px 18px;
+  font-size: 18px;
+
+}
+
+.ph-btn-blue {
+
+  border-color: #326E99;
+  background-color: #3F8ABF;
+}
+
+.ph-btn-blue:hover, .ph-btn-blue:focus, .ph-btn-blue:active {
+  background-color: #397CAC;
+  border-color: #326E99;   
+}
+
+.ph-float {
+  vertical-align: middle;
+}
+
+.ph-container{
+	height: 100px;
+  padding: 2px 16px;
+}
+
+select{
+	display: inline-block;
+  font-size: 12px position: relative;
+}
+
+.w3_row{
+	margin-left: 20px;
+	margin-right: 20px;
+}

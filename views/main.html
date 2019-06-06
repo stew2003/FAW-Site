@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <title>Welcome To Meme Central</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="syle.css">
+  <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+  </style>
+  <body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a href="notfunnymemes.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">1 n-gram Memes</a>
+        <a href="funnymemes.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">2 n-gram Memes</a>
+        <a href="generator.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Generator</a>
+      </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+      <!-- Header -->
+      <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+          <h1><b>Welcome To Comic Central</b></h1>
+          <p><b>Where you can find the computor's humor!</b></p>
+          <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+        </header>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="w3-row" id="myGrid" style="margin-bottom:128px; width:98%; margin: auto;">
+        <div class="w3-third">
+          <img src="resuscitate.jpg" style="width:100%">
+          <img src="recuscitate2.jpg" style="width:100%">
+          <img src="religion.jpg" style="width:100%">
+	  <img src="corn.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-third">
+          <img src="offender.jpg" style="width:100%">
+          <img src="goat.jpg" style="width:100%">
+          <img src="general.jpg" style="width:100%">
+	  <img src="stormy.jpg" style="width:100%">
+        </div>
+        <div class="w3-third">
+          <img src="cave.jpg" style="width:100%">
+          <img src="trade.jpg" style="width:100%">
+          <img src="trump.jpg" style="width:100%">
+	  <img src="dragon.jpg" style="width:100%">
+        </div>
+      </div>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Held Together With The Power of <a href="https://www.youtube.com/watch?v=8ci2hj7CSHI" target="_blank" class="w3-hover-text-green">Flex Tape™</a></p>
+    </footer>
+
+    <script>
+      // Toggle grid padding
+      function myFunction() {
+        var x = document.getElementById("myGrid");
+        if (x.className === "w3-row") {
+          x.className = "w3-row-padding";
+        } else { 
+          x.className = x.className.replace("w3-row-padding", "w3-row");
+        }
+      }
+
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    
+   body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -69%;
+      background-color: #908a8a;
+      background-color: #908a8a;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 167%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+   
+    </style>
+  
+  </head>
+  <!--<body>
+    <p align="center"><a>Welcome to Meme Central</a></p>
+    
+    <p align="center">The Art of Making Something <strong>Shitty</strong> With CS!
+    </p>
+<span style="font-size:22px;cursor:pointer" onclick="openNav()">&#908a8a; Menu</span>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="funnymemes.html">Funny Memes</a></li>
+          <li><a href="notfunnymemes.html">Not Funny Memes</a></li>
+         
+            
+        </ul>
+      </div>
+    </div>
+    <h2></h2>
+    <p align="center"><a>Memes of the Day!</a></p>
+    
+
+
+    
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+  
+    
+    </script>
+    
+    
+    <div id="over">
+      <span class="Centerer"></span>
+      <img class="Centered" src="dance-of-macarena-bear-memes.jpg" />
+      <img class="Centered" src="maxresdefault.jpg" />
+      <img class="Centered" src="Nerd-Meme-29.jpeg" />
+      <img class="Centered" src="charles-dion-mcdowells-neck.jpg" />
+-->
+      
+      <!--<div class="gallery">
+        <a target="_blank" href="dance-of-macarena-bear-memes.jpg">
+          <img class="Centered" src="dance-of-macarena-bear-memes.jpg" width="300" height="200"/>
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="maxresdefault.jpg">
+          <img class="Centered" src="maxresdefault.jpg" width="300" height="200" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="Nerd-Meme-29.jpeg">
+          <img class="Centered" src="Nerd-Meme-29.jpeg" width="300" height="200" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="charles-dion-mcdowells-neck.jpg">
+          <img class="Centered" src="charles-dion-mcdowells-neck.jpg"  width="300" height="200" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+    </div> 
+    </div> -->
+  </body>
+  
+  <!--
+  <button class="btn">
+  <span>Funny Memes</span></button>
+<button class="btn">
+<span>Not Funny Memes </span></button>
+  -->
+  
+  
+  
+  
+</html>

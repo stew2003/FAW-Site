@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  * {box-sizing: border-box;}
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #908a8a;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #5c5555;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #9730e3;
+      color: white;
+    }
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;  
+      }
+    }
+  </style>
+  
+  <body>
+    <div class="topnav">
+      <a class="active" href="main.html">Home</a>
+      <a class="active" href="notfunnymemes.html">1 n-gram Memes</a>
+      <a class="active" href="funnymemes.html">2 n-gram Memes</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div style="padding-left:16px">
+
+    </div>
+  </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generator</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1 {font-family: "Montserrat", sans-serif}
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+  </style>
+  </head>
+
+  <body>
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a href="funnymemes.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">1 n-gram Memes</a>
+        <a href="notfunnymemes.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">2 n-gram Memes</a>
+        <a href="generator.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Generator</a>
+      </div>
+    </nav>
+    <div align="center">
+      <h1>Generate Your Own Funny Caption!</h1>
+    </div>
+    <div class="ph-container">
+     <form action = "/generate" method = "post" id="myform">
+      <div align="center"  class="ph-float">
+        <a href="#" onclick="document.getElementById('myform').submit()" class='ph-button ph-btn-blue'>Generate a Caption!</a>
+        <select class='ph-button ph-btn-blue' name="n-gram">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+    </form>
+    <p> {{text}} </p>
+    </div>
+    
+  </body>
+</html>

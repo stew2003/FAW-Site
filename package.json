@@ -1,0 +1,19 @@
+{
+  "name": "webcomics",
+  "version": "1.0.0",
+  "description": "markov chain that makes webcomics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Stewart Morris",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mustache-express": "^1.2.8"
+  }
+}
